@@ -71,7 +71,7 @@ ROOT_URLCONF = 'deliver.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR, 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -148,6 +148,11 @@ EMAIL_BACKEND  = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_AUTHENTICATED_LOGIN_REDIRECTS = False
 
+ACCOUNT_AUTHENTICATED_INDEX_REDIRECTS = False
+
 ACCOUNT_ADAPTER = 'restaurant.account_adapter.NoNewUsersAccountAdapter'
+
+LOGIN_REDIRECT_URL = 'dashboard'
+
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
