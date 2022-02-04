@@ -99,7 +99,7 @@ WSGI_APPLICATION = 'deliver.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://hnlrttakgopwfj:1763e37fe763869a289b066ccca6a59544c14fcdd129014c990ec50550c698e7@ec2-54-209-221-231.compute-1.amazonaws.com:5432/d6q47tpgthk10c')
+    'default': dj_database_url.parse('postgres://dsiwaheoprtevi:f786184df1d6bd1d66ca3acca079d0b93073af0f0203c69a0fceef9f8d37a0a6@ec2-52-31-219-113.eu-west-1.compute.amazonaws.com:5432/d1r8dr1e7bgak7')
     }
 
 # Password validation
